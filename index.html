@@ -8,9 +8,13 @@
         <div id="container">
             <div id="header">
                 <div id= "gmail">
-                    <a href="">Gmail</a>
-                    <a href="">Imagens</a>
-                    <a href="">Placeholder</a>
+                    <ul>
+                        <li style="padding-left: 15px;"><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
+                        <li style="padding-left: 15px;"><a href="https://www.google.pt/imghp?hl=pt-PT&tab=wi&ogbl">Imagens</a></li>
+                        <li style="padding-left: 15px;"><a href="https://www.google.pt/intl/pt-PT/about/products?tab=wh"><img class="apps" src= "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" title="Google Apps" alt="Google Apps Icon">
+                        </a></li>
+                        <li style="padding-left: 15px; padding-right: 15px;"><a class="signIn" href="https://accounts.google.com/ServiceLogin?hl=pt-PT&amp;passive=true&amp;continue=https://www.google.com/webhp%3Fhl%3Dpt-PT%26sa%3DX%26ved%3D0ahUKEwiumPXL2pznAhUG1RoKHZMeD8YQPAgD%26pli%3D1">Entrar</a></li>
+                    </ul>
                 </div>
             </div>
             <div id="content">
@@ -18,23 +22,19 @@
                     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
                 </div>
                 <div id="search">
-                    <input type="text" title="Pesquisar" style= "width: 500px; height: 35px";>
+                    <div class="left">
+                        <img src="https://icons-for-free.com/iconfiles/png/512/magnifying+glass+search+zoom+icon-1320196461375500720.png" alt="Magnifying Glass">
+                    </div>
+                    <div class="middle">
+                        <input type="text" title="Pesquisar">
+                    </div>
+                    <div class="right" title="Ferramentas de introdução">
+                        <img src="https://www.gstatic.com/inputtools/images/tia.png" alt="Keyboard">
+                    </div>
                 </div>
                 <div id="buttons">
-                    <input class="pesquisa" type="submit" value="Pesquisa Google" style="
-                    margin: 11px 4px 11px 4px;
-                    border: 1px;
-                    padding:  0px 16px 0px 16px;
-                    width: 140px;
-                    height: 34px;
-                ">
-                    <input type="submit" value="Sinto-me com sorte" style="
-                    margin: 11px 4px 11px 4px;
-                    border: 1px;
-                    padding:  0px 16px 0px 16px;
-                    width: 154px;
-                    height: 34px;
-                ">
+                    <input type="submit" value="Pesquisa Google" class="pesquisa">
+                    <input type="submit" value="Sinto-me com sorte" class="sorte">
                 </div>
             </div>
             <div id="footer">
@@ -42,13 +42,17 @@
                     <p>Portugal</p>
                  </div>
                 <div id="footer2">
-                    <a class="left" href="">Publicidade</a>
-                    <a class="left" href="">Negócios</a>
-                    <a class="left" href="">Sobre</a>
-                    <a class="left" href="">Como funciona a Pesquisa</a>
-                    <a class="right" href="">Privacidade</a>
-                    <a class="right" href="">Termos</a>
-                    <a class="right" href="">Definições</a>
+                    <ul class="left">
+                        <li><a href="https://ads.google.com/intl/pt-PT_pt/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidade</a></li>
+                        <li style="padding-left: 27px;"><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Negócios</a></li>
+                        <li style="padding-left: 27px;"><a href="https://about.google/?utm_source=google-PT&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre</a></li>
+                        <li style="padding-left: 27px;"><a href="https://google.com/search/howsearchworks/?fg=1">Como funciona a Pesquisa</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="https://policies.google.com/privacy?fg=1">Privacidade</a></li>
+                        <li style="padding-left: 27px;"><a href="https://policies.google.com/terms?fg=1">Termos</a></li>
+                        <li style="padding-left: 27px; padding-right: 15px;"><a href="https://www.google.com/preferences?hl=pt-PT">Definições</a></li>
+                    </ul>
                 </div>
             </div>        
         </div>

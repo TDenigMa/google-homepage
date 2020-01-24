@@ -1,3 +1,5 @@
+/*---------------------General CSS-------------------*/
+
 html {
     height: 100%;
 }
@@ -6,7 +8,36 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+li {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+a {
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87)
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*---------------------IDs CSS-------------------------*/
 
 #container {
     min-height: 100%;
@@ -19,6 +50,7 @@ body {
     text-align: right;
     position: relative;
     right: 0;
+    line-height: 24px;
 }
 
 #content {
@@ -35,9 +67,70 @@ body {
 }
 
 #search {
-    padding: 10px;
-    width: 500px;
-    height: 40px;
+    width: 584px;
+    height: 46px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: transparent;
+    border-radius: 80px;
+    border: 2px solid rgb(228, 228, 228);
+    display: flex;
+    
+}
+
+#search .left {
+    flex: 1;
+    border-left: 1px solid transparent;
+    margin-right: -1px;
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    height: 100%;
+    width: 47px !important;
+    position: relative;
+    border-left-width: 0px;
+}
+
+#search .left img {
+    margin: -15px 0 0 -15px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
+}
+
+#search .middle input{
+    width: 490px; 
+    height: 35px; 
+    display: block; 
+    margin: auto;
+    border-style: none;
+    margin-top: 4px;
+    background-color: transparent;
+}
+
+#search .right {
+    border-left: 1px solid transparent;
+    margin-right: -1px;
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    height: 100%;
+    width: 45px !important;
+    position: relative;
+}
+
+#search .right img {
+    margin: -6px 0 0 -12px;
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#search:hover {
+    box-shadow: 0 1px 4px 0 rgba(32,33,36,0.28);
 }
 
 #buttons {
@@ -46,14 +139,119 @@ body {
 
 #footer{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     height: 100px;
+    color: #5f6368;
 }
-#footer1 {
 
+#footer a {
+    color: #5f6368;
+}
+
+#footer1 {
+    background-color: #f2f2f2;
+    font-size: 15px;
+    width: 1878px;
+    height: 48px;
+    margin-left: 0px;
+    padding-left: 27px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    border-top: 1px solid rgb(228, 228, 228);
+    border-bottom: 1px solid rgb(228, 228, 228);
 }
 
 #footer2 {
+    background-color: #f2f2f2;
+    font-size: 15px;
+    width: 1878px;
+    height: 50px;
+    margin-left: 0px;
+    padding-left: 27px;
+}
 
+#footer2 ul {
+    margin: 0;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+#footer2 .left {
+    width: 50%;
+    float: left;
+    height: 50px;
+
+}
+
+#footer2 .right {
+    text-align: right;
+    width: 50%;
+    float:right;
+    height: 50px;
+
+}
+
+/*---------------------Class CSS----------------------*/
+
+.signIn{
+    display: float;
+    float: right;
+    background-color: rgb(67, 135, 253);
+    margin: 0;
+    border: 1px;
+    padding: 0px 12px 0px 12px;
+    width: 39px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.signIn:hover {
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.apps {
+    width:30px; 
+    height: 30px; 
+    color: rgba(0, 0, 0, 0.10);
+    opacity: 0.5;
+}
+
+.apps:hover {
+    opacity: 1;
+}
+
+.pesquisa {
+    margin: 11px 4px 11px 4px;
+    border: 1px;
+    padding:  0px 16px 0px 16px;
+    width: 140px;
+    height: 34px;
+    background-color: rgb(242, 242, 242);
+    font-size: 14px;
+    color: #5F6368;
+}
+
+.sorte {
+    margin: 11px 4px 11px 4px;
+    border: 1px;
+    padding:  0px 16px 0px 16px;
+    width: 154px;
+    height: 34px;
+    background-color: rgb(242, 242, 242);
+    font-size: 14px;
+    color: #5F6368;
+}
+
+.pesquisa:hover, .sorte:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color:#f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
 }
